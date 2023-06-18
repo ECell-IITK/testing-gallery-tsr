@@ -1,7 +1,7 @@
 .mobile-view{
     display: none;
 }
-@media screen and (max-width) {
+@media screen and (max-width: 600px) {
     .mobile-view{
         display: block;
     }
