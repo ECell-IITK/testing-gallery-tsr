@@ -4,5 +4,55 @@
 @media screen and (max-width: 600px) {
     .mobile-view{
         display: block;
+        .carousel{
+            width: 75%;
+            /* padding: 50px; */
+            left: 21%;
+            /* display: inline-block; */
+            height: 200vh;
+        }
+        /* .menu{
+            position: fixed;
+            background-color:black;
+            color: aqua;
+            text-align: center;
+            height: 50vh;
+            width: 20%;
+            top: 15vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        } */
+        #menu {
+            position: fixed;
+            top: 0;
+            left: -300px; /* Initial position, off the screen */
+            width: 300px;
+            height: 100vh;
+            background-color: #f1f1f1;
+            transition: left 0.3s ease;
+          }
+          
+          #menu.open {
+            left: 0; /* Slides in from the left */
+          }
+          
+          #menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 50px;
+          }
+          
+          #menu li {
+            margin-bottom: 20px;
+          }
+          
+          #menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+          }
+          
+        
     }
 }
