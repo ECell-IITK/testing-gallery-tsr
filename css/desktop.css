@@ -10,14 +10,18 @@
   }
 
 
-/* .sidebar{
+.sidebar{
     width: 20%;
     background-color: dimgray;
-} */
+    height: 100%;
+    margin: 20px;
+    border-radius: 28px;
+}
 
-.carousel-slide{
+#carouselDesktopIndicators{
     width:80%;
     position: relative;
+    height: fit-content;
 }
 
   
