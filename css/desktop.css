@@ -3,3 +3,22 @@
         display: none;
     }
 }
+
+.desktop-view {
+    display: flex;
+    height: 100%;
+  }
+
+
+.sidebar{
+    width: 20%;
+    background-color: dimgray;
+    /* height: 100%; */
+}
+
+.carousel-slide{
+    width:80%;
+    position: relative;
+}
+
+  
