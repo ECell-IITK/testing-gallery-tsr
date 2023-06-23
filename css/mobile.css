@@ -5,7 +5,7 @@
     .mobile-view{
         display: block;
         .carousel{
-            width: 75%;
+            width: 100%;
             /* padding: 50px; */
             left: 21%;
             /* display: inline-block; */
@@ -23,35 +23,76 @@
             flex-direction: column;
             justify-content: space-evenly;
         } */
+        #menuContainer {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
+        }
+        
+        #arrowContainer {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background-color: #f1f1f1;
+          cursor: pointer;
+        }
+        
+        .arrow-left {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-top: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+          border-right: 8px solid #333;
+        }
+        
         #menu {
-            position: fixed;
-            top: 0;
-            left: -300px; /* Initial position, off the screen */
-            width: 300px;
-            height: 100vh;
-            background-color: #f1f1f1;
-            transition: left 0.3s ease;
-          }
-          
-          #menu.open {
-            left: 0; /* Slides in from the left */
-          }
-          
-          #menu ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 50px;
-          }
-          
-          #menu li {
-            margin-bottom: 20px;
-          }
-          
-          #menu a {
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-          }
+          position: absolute;
+          top: 0;
+          left: -300px; /* Initial position, off the screen */
+          width: 130px;
+          height: 50vh;
+          top: 25vh;
+          background-color: #f1f1f1;
+          transition: left 0.3s ease;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          background-color: yellow;
+          border-radius: 20px;
+        }
+        
+        #menu.open {
+          left: 40px; /* Moves the menu to the right */
+        }
+        
+        #menu ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 5px;
+        }
+        
+        #menu li {
+          margin-bottom: 20px;
+        }
+        
+        #menu a {
+          text-decoration: none;
+          color: #333;
+          font-size: 18px;
+        }
+        
+        
           
         
     }
