@@ -64,3 +64,7 @@
 .years{
     cursor: pointer;
 }
+
+.display-none{
+    display: none;
+}
