@@ -6,6 +6,10 @@
     }
 }
 
+*{
+    font-family: l;
+}
+
 .mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -51,7 +55,8 @@
     height: 10vh;
     font-size: 50px;
     font-family: 'Work Sans', sans-serif;
-    color: white;
+    color: rgb(74, 17, 229);
+    font-weight: 900;
   }
 
   .justify-between{
@@ -68,3 +73,16 @@
 .display-none{
     display: none;
 }
+
+.navbar li{
+    list-style: none;
+    margin: 0 12px;
+    padding: 0;
+}
+
+.color-white{
+    color: white;
+}
+
+
+
